@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sudeep Sharma | Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: #111827;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+            font-size: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.8rem;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color : #10b850
+        }
+
+        /* ===== PROJECT GRID ===== */
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.4s ease;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.6);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 320px;      /* Bigger project preview */
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            margin-bottom: 18px;
+            color: #38bdf8;
+            font-size: 1.8rem;   /* Increased size */
+            font-weight: 700;    /* Bolder */
+        }
+
+
+        .project-content p {
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #111827;
+            margin-top: 80px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Mobile */
+        @media(max-width:768px){
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Sudeep Sharma</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="qualification.html">Qualifications</a>
+    </div>
+</nav>
+
+<section>
+
+    <h1>My Projects</h1>
+
+    <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="images/movie-recommendor-system.png" alt="Movie Recommender System">
+
+            <div class="project-content">
+                <h3>Movie Recommender System</h3>
+                <p>
+                    A Machine Learning project built using Python with a dataset 
+                    of top IMDb-rated movies. It recommends similar movies 
+                    based on user input using cosine similarity.
+                </p>
+                <a href="https://sudeep1245-movie-recommendor-website-app-vkv8hb.streamlit.app/"
+                   target="_blank"
+                   class="btn">
+                    View Live Project
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="images/sms-spam-classifier.jpg" alt="SMS Spam Classifier">
+
+            <div class="project-content">
+                <h3>SMS Spam Classifier</h3>
+                <p>
+                    A Natural Language Processing project that classifies 
+                    messages as Spam or Ham using machine learning models.
+                </p>
+                <a href="https://sudeep1245-email-spam-classifier-app-ef6kjq.streamlit.app/"
+                   target="_blank"
+                   class="btn">
+                    View Live Project
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Sudeep Sharma | Projects Portfolio
+</footer>
+
+</body>
+</html>
